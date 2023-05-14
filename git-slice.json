@@ -1,0 +1,12 @@
+{
+  "repoUrl": "https://github.com/crispr-candidate/gautamanil",
+  "folders": ["./"],
+  "branch": "main",
+  "ignore": [
+    "./components",
+    "git-slice.json",
+    ".github/workflows/git-slice.yml",
+    ".github/workflows/test.yml",
+    ".github/CODEOWNERS"
+  ]
+}
