@@ -1,0 +1,84 @@
+name: Gitslice CI
+
+on:
+  push:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      clientCommitMessage:
+        description: "Commit message"
+        required: true
+      branch:
+        description: "Branch to push"
+        required: true
+      forcePush:
+        description: "Force push branch ?"
+        default: "true"
+        required: false
+
+env:
+  GIT_SLICE_DEFAULT_BRANCH: ${{ secrets.GIT_SLICE_DEFAULT_BRANCH }}
+
+jobs:
+  gitslice-pull:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.16.0]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITSLICE_TOKEN }}
+          ref: ${{ env.GIT_SLICE_DEFAULT_BRANCH }}
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install GitSlice and setup Bot
+        run: |
+          npm install -g https://github.com/bipsBro/slice-tool.git
+          git config --global user.email ${{ secrets.EMAIL }}
+          git config --global user.name ${{ secrets.USERNAME }}
+      - name: Gitslice pull
+        run: |
+          git fetch -f && echo "amp"
+          git reset --hard origin/$GIT_SLICE_DEFAULT_BRANCH && git pull origin $GIT_SLICE_DEFAULT_BRANCH && git-slice pull --username ${{ secrets.USERNAME }} --password ${{ secrets.PASSWORD }} --token ${{ secrets.GITSLICE_TOKEN }} && git push origin $GIT_SLICE_DEFAULT_BRANCH
+  gitslice-push:
+    needs: gitslice-pull
+    if: ${{ github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.16.0]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITSLICE_TOKEN }}
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install GitSlice and setup Bot
+        run: |
+          npm install -g https://github.com/bipsBro/slice-tool.git
+          git config --global user.email ${{ secrets.EMAIL }}
+          git config --global user.name  ${{ secrets.USERNAME }}
+          git config --global pull.rebase true
+      - name: Gitslice push
+        run: |
+          git fetch -f
+          git branch
+          git checkout ${{ github.event.inputs.branch }}
+          git pull origin ${{ github.event.inputs.branch }}
+          git merge origin/$GIT_SLICE_DEFAULT_BRANCH
+          git push origin ${{ github.event.inputs.branch }}
+          git status
+          git-slice push --branch ${{ github.event.inputs.branch }} --message "${{ github.event.inputs.clientCommitMessage }}" --author-name ${{ secrets.USERNAME }} --author-email ${{ secrets.EMAIL }} --password ${{ secrets.PASSWORD }} --token ${{ secrets.GITSLICE_TOKEN }} --force-push ${{ github.event.inputs.forcePush }}
