@@ -1,0 +1,115 @@
+body {
+  background-color: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.im-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  padding: 0 60px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.im-box .pattern img {
+  width: 15px;
+  height: 15px;
+}
+
+.im-box .description-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  flex: 2;
+}
+
+.im-box .description-box .heading {
+  color: #2b2b2b;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.front-end {
+  color: #ffb400;
+}
+
+.im-box .description-box .heading-description {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #767676;
+  text-transform: capitalize;
+}
+
+.im-box .description-box button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #ffb400;
+  padding: 16px 32px;
+  color: #2b2b2b;
+  border: none;
+  width: 154px;
+  height: 51px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.im-box .profile-image {
+  flex: 1;
+}
+
+.im-box .profile-image img {
+  width: 100%;
+  height: auto;
+}
+
+.im-box .pattern .design {
+  position: absolute;
+}
+
+.circle-1 {
+  top: 30px;
+  left: 40px;
+}
+
+.circle-2 {
+  left: 88px;
+  bottom: 29px;
+}
+
+.circle-3 {
+  top: 52px;
+  left: 520px;
+}
+
+.circle-4 {
+  left: 558px;
+  bottom: 71px;
+}
+
+.rect-1 {
+  left: 895px;
+  top: 70px;
+}
+
+.rect-blue {
+  left: 374px;
+  bottom: 113px;
+}
+
+.triangle {
+  right: 25px;
+  bottom: 25px;
+}

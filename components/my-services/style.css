@@ -1,0 +1,112 @@
+body {
+  background-color: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.my-services-main-box {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.my-services-main-box .heading h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #2b2b2b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.my-services-main-box .heading-description {
+  margin: 0 auto 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #767676;
+}
+
+.my-services-main-box .my-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.my-services-main-box .my-services .box-web {
+  padding: 20px 30px 20px 30px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.my-services-main-box .my-services .box-web img {
+  width: 66px;
+  margin-top: 30px;
+  margin-bottom: 27px;
+}
+
+.my-services-main-box .my-services .box-web .top-item {
+  color: #2b2b2b;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.my-services-main-box .my-services .box-web .bottom-item {
+  color: #767676;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.my-services-main-box .my-services .advertising {
+  padding-top: 40px;
+}
+
+.my-services-main-box .my-services .advertising .order-item {
+  margin-top: 28px;
+  color: #ffb400;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.my-services-main-box .my-services .advertising .order-item:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .my-services-main-box .my-services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .my-services-main-box .my-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+}

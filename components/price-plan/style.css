@@ -1,0 +1,147 @@
+/* Price Plan Styles */
+
+body {
+  background-color: #e5e5e5;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.price-main-box {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.price-main-box .heading h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #2b2b2b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.price-main-box .heading-description {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #767676;
+}
+
+.price-main-box .price-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.price-main-box .price-box .individual-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 55px 5px 25px 30px;
+}
+
+.box-gold {
+  position: relative;
+}
+
+.price-main-box .price-box .individual-box .category {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  margin: 0 auto;
+}
+
+.price-main-box .price-box .individual-box .price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #2b2b2b;
+  margin: 0 auto;
+}
+
+.per-hour {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.price-main-box .price-box .individual-box .description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #767676;
+}
+
+.price-main-box .price-box .individual-box .individual-row {
+  display: flex;
+  gap: 15px;
+}
+
+.price-main-box .price-box .individual-box .individual-row img {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+}
+
+.price-main-box .price-box .individual-box .individual-row .services {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #767676;
+}
+
+.price-main-box .price-box .box-gold .remarks {
+  text-align: center;
+  background-color: #ffb400;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2b2b2b;
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 1px 5px #000000;
+  margin: 0 auto;
+}
+
+.price-main-box .price-box .box-gold button {
+  background-color: #ffb400;
+}
+
+@media screen and (max-width: 768px) {
+  .price-main-box .price-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+}

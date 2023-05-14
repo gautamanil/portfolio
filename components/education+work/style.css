@@ -1,0 +1,147 @@
+body {
+  background-color: #e5e5e5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.education-main-box {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.education-main-box .heading h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #2b2b2b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.education-main-box .heading-description {
+  margin: 0 auto 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #767676;
+}
+
+.education-main-box .education-box {
+  background-color: #ffffff;
+  padding: 20px 40px;
+}
+
+.education-main-box .education-box .education-individual-box {
+  display: flex;
+  gap: 20px;
+  padding: 28px 0px 15px 0px;
+}
+
+.box2 {
+  border-top: 1.5px solid #f0f0f6;
+  border-bottom: 1.5px solid #f0f0f6;
+}
+
+.education-main-box .education-box .education-individual-box .univ-details {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 25px;
+}
+
+.education-main-box
+  .education-box
+  .education-individual-box
+  .univ-details
+  .univ {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.education-main-box
+  .education-box
+  .education-individual-box
+  .univ-details
+  .student-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.education-main-box
+  .education-box
+  .education-individual-box
+  .univ-details
+  .student-row
+  .student {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.education-main-box
+  .education-box
+  .education-individual-box
+  .univ-details
+  .student-row
+  .duration {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #ffb400;
+  border-radius: 2px;
+  padding: 4px 7px 4px 7px;
+}
+
+.education-main-box
+  .education-box
+  .education-individual-box
+  .certificate-details {
+  flex: 3;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-main-box
+  .education-box
+  .education-individual-box
+  .certificate-details
+  .certificate-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2b2b2b;
+}
+
+.education-main-box
+  .education-box
+  .education-individual-box
+  .certificate-details
+  .certificate-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #767676;
+}
+
+@media screen and (max-width: 768px) {
+  .education-main-box .education-box .education-individual-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px 0px 15px 0px;
+  }
+}
