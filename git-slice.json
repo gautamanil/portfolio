@@ -6,7 +6,7 @@
     "./components",
     "git-slice.json",
     ".github/workflows/git-slice.yml",
-    ".github/workflows/test.yml",
+    ".github/workflows/static.yml",
     ".github/CODEOWNERS"
   ]
 }
