@@ -1,28 +1,876 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anil Gautam</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="flex">
-    <section id="" class="bg-gray-50 fixed w-[300px] px-[20px]">
-      <!-- left side bar -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anil Gautam</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-2,345;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Roboto&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            klr_page: "#e5e5e5",
+            klr_section: "#ffffff",
+            klr_heading: "#2b2b2b",
+            klr_para: "#767676",
+            klr_border: "#f0f0f6",
+            klr_yellow: "#ffb400",
+            klr_special: "#7eb942",
+          },
+          fontFamily: {
+            inter: "Inter",
+            lato: "Lato"
+          }
+        },
+      },
+    };
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body class="flex font-inter bg-klr_page">
+  <section id="" class="min-w-[300px] h-full p-[20px] bg-klr_section">
+    <div class="pb-[10px] mb-[24px] border-b-2 border-solid border-klr_border">
+      <div><img class="m-0 block m-auto mb-[30px] max-w-full" src="images/profile_small.jpg" /></div>
+      <h4 class="font-medium text-lg color-klr_heading text-center leading-[22px]">Rayan Adlardard</h4>
+      <p class="text-base leading-6 color-klr_para text-center my-4">Font-end Developer</p>
+      <div class="flex justify-center gap-4">
+        <div><img class="w-6 h-6 rounded-[12px]" src="images/facebook.jpg" /></div>
+        <div><img class="w-6 h-6 rounded-[12px]" src="images/instagram.jpg" /></div>
+        <div><img class="w-6 h-6 rounded-[12px]" src="images/twitter.jpg" /></div>
+        <div><img class="w-6 h-6 rounded-[12px]" src="images/linkedin.jpg" /></div>
+        <div><img class="w-6 h-6 rounded-[12px]" src="images/youtube.jpg" /></div>
+        <div><img class="w-6 h-6 rounded-[12px]" src="images/dribbble.jpg" /></div>
+      </div>
+    </div>
+    <div
+      class="w-full text-base color-klr_heading mt-0 pb-1.5 border-b-2 border-solid border-klr_border flex flex-col gap-2">
+      <div class="flex flex-row justify-between items-center">
+        <p class="bg-klr_yellow">Age:</p>
+        <p>24</p>
+      </div>
+
+      <div class="flex flex-row justify-between items-center">
+        <p class="bg-klr_yellow">Residence:</p>
+        <p>BD</p>
+      </div>
+
+      <div class="flex flex-row justify-between items-center">
+        <p class="bg-klr_yellow">Freelance:</p>
+        <p class="text-klr_special">Available</p>
+      </div>
+
+      <div class="row-it flex flex-row justify-between items-center">
+        <p class="bg-klr_yellow">Address:</p>
+        <p>Dhaka, Bangladesh</p>
+      </div>
+    </div>
+    <div class="mt-6 pb-6 border-b-2 border-solid border-klr_border">
+      <h4 class="font-medium text-lg leading-6 text-klr_heading mb-4">Languages</h4>
+      <div class="mb-1 flex flex-row justify-between">
+        <p class="text-base text-klr_para">Bangla</p>
+        <p class="text-base text-klr_para">100%</p>
+      </div>
+      <div class="mb-2.5">
+        <div class="h-[9px] w-full border-[0.5px] border-solid border-klr_yellow rounded-[5px]">
+          <div class="h-[2px] border-[2px] border-solid border-klr_yellow bg-klr_yellow rounded-[2px] w-4.5/5 m-[2px]">
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-1 flex flex-row justify-between">
+        <p class="text-base text-klr_para">English</p>
+        <p class="text-base text-klr_para">80%</p>
+      </div>
+      <div class="mb-2.5">
+        <div class="h-[9px] w-full border-[0.5px] border-solid border-klr_yellow rounded-[5px]">
+          <div class="h-[2px] border-[2px] border-solid border-klr_yellow bg-klr_yellow rounded-[2px] w-4/5 m-[2px]">
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-1 flex flex-row justify-between">
+        <p class="text-base text-klr_para">Spanish</p>
+        <p class="text-base text-klr_para">60%</p>
+      </div>
+      <div class="mb-2.5">
+        <div class="h-[9px] w-full border-[0.5px] border-solid border-klr_yellow rounded-[5px]">
+          <div class="h-[2px] border-[2px] border-solid border-klr_yellow bg-klr_yellow rounded-[2px] w-3/5 m-[2px]">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills mt-6 pb-6 border-b-2 border-solid border-klr_border">
+      <h4 class="font-medium text-lg leading-5 text-klr_heading mb-4">Skills</h4>
+      <div class="mb-px flex flex-row justify-between">
+        <p class="text-base text-klr_para">HTML</p>
+        <p class="text-base text-klr_para">90%</p>
+      </div>
+      <div class="mb-2.5">
+        <div class="h-[9px] w-full border-[0.5px] border-solid border-klr_yellow rounded-[5px]">
+          <div class="h-[2px] border-[2px] border-solid border-klr_yellow bg-klr_yellow rounded-[2px] w-11/12 m-[2px]">
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-px flex flex-row justify-between">
+        <p class="text-base text-klr_para">CSS</p>
+        <p class="text-base text-klr_para">85%</p>
+      </div>
+      <div class="mb-2.5">
+        <div class="h-[9px] w-full border-[0.5px] border-solid border-klr_yellow rounded-[5px]">
+          <div class="h-[2px] border-[2px] border-solid border-klr_yellow bg-klr_yellow rounded-[2px] w-10/12 m-[2px]">
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-px flex flex-row justify-between">
+        <p class="text-base text-klr_para">JavaScript</p>
+        <p class="text-base text-klr_para">80%</p>
+      </div>
+      <div class="mb-2.5">
+        <div class="h-[9px] w-full border-[0.5px] border-solid border-klr_yellow rounded-[5px]">
+          <div class="h-[2px] border-[2px] border-solid border-klr_yellow bg-klr_yellow rounded-[2px] w-4/5 m-[2px]">
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-px flex flex-row justify-between">
+        <p class="text-base text-klr_para">PHP</p>
+        <p class="text-base text-klr_para">75%</p>
+      </div>
+      <div class="mb-2.5">
+        <div class="h-[9px] w-full border-[0.5px] border-solid border-klr_yellow rounded-[5px]">
+          <div class="h-[2px] border-[2px] border-solid border-klr_yellow bg-klr_yellow rounded-[2px] w-3/4 m-[2px]">
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-px flex flex-row justify-between">
+        <p class="text-base text-klr_para">WordPress</p>
+        <p class="text-base text-klr_para">85%</p>
+      </div>
+      <div class="mb-2.5">
+        <div class="h-[9px] w-full border-[0.5px] border-solid border-klr_yellow rounded-[5px]">
+          <div class="h-[2px] border-[2px] border-solid border-klr_yellow bg-klr_yellow rounded-[2px] w-5/6 m-[2px]">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-6 pb-6 border-b-2 border-solid border-klr_border">
+      <h4 class="text-lg leading-5 text-klr_heading mb-4">Extra Skills</h4>
+      <div class="flex flex-col gap-1">
+        <div class="mb-4 flex flex-row gap-4">
+          <img class="w-5 h-5" src="images/Icons.jpg" />
+          <p>BootStrap, Materialize</p>
+        </div>
+        <div class="mb-4 flex flex-row gap-4">
+          <img class="w-5 h-5" src="images/Icons.jpg" />
+          <p>Stylus, SASS, LESS</p>
+        </div>
+        <div class="mb-4 flex flex-row gap-4">
+          <img class="w-5 h-5" src="images/Icons.jpg" />
+          <p>Gulp, Webpack, Grunt</p>
+        </div>
+        <div class="mb-4 flex flex-row gap-4">
+          <img class="w-5 h-5" src="images/Icons.jpg" />
+          <p>GIT Knowledge</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <div>
+        <button
+          class="w-[200px] h-[40px] bg-klr_yellow text-sm leading-4 text-klr_heading font-medium rounded-none m-auto flex justify-center items-center gap-2.5"><span>DOWNLOAD
+            CV</span><img src="images/download.jpg" /></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Middle components -->
+  <section id="" class="mr-[100px] p-[30px] flex flex-col gap-y-16 overflow-auto">
+    <!-- I'm Name Section -->
+    <section class="im-page-section flex flex-row w-full bg-klr_section py-0 px-[60px] font-['Inter'] relative">
+
+      <div>
+        <div class="absolute left-[4%] top-[6%]"><img class="w-4 h-4" src="images/ellipse.jpg"></div>
+        <div class="absolute left-[9%] bottom-[6%]"><img class="w-4 h-4" src="images/ellipse.jpg"></div>
+        <div class="absolute left-[54%] top-[11%]"><img class="w-4 h-4" src="images/ellipse.jpg"></div>
+        <div class="absolute left-[58%] bottom-[15%]"><img class="w-4 h-4" src="images/ellipse.jpg"></div>
+        <div class="absolute right-[6%] top-[15%]"><img class="w-4 h-4" src="images/square.jpg"></div>
+        <div class="absolute left-[39%] bottom-[24%]"><img class="w-4 h-4" src="images/square-blue.jpg"></div>
+        <div class="absolute right-[3%] bottom-[5%]"><img class="w-4 h-4" src="images/triangle.jpg"></div>
+      </div>
+
+      <div class="flex flex-col basis-2/3 justify-center items-left">
+
+        <h3 class="text-[#2b2b2b] font-bold text-[48px] leading-15 my-5">I'm Rayan Adlrdard <span
+            class="text-klr_yellow">Front-end</span> Developer</h3>
+
+        <p class="pb-5 text-base text-klr_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
+          feugiat
+          placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
+
+        <button
+          class="font-[600] text-base leading-5 bg-klr_yellow py-4 px-8 text-[#2b2b2b] w-[154px] h-[50px] mt-6 mb-5">HIRE
+          ME &#8594</button>
+      </div>
+
+      <div><img class="w-full h-auto basis-1/2" src="images/image.jpg" /></div>
+
     </section>
-    <section
-      id=""
-      class="bg-gray-300 ml-[300px] mr-[100px] p-[30px] flex flex-col gap-y-16"
-    >
-      <!-- Others components -->
-      <p>hi </p>
+    <!-- My Services Section -->
+    <section class="services-section">
+      <h3 class="font-bold text-[32px] leading-10 text-klr_heading text-center mb-6">My Services</h3>
+
+      <p class="m-0 m-auto mb-12 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit Non Deserunt
+        Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+      <div
+        class="grid grid-cols-3 gap-4 max-[640px]:grid-cols-1 max-[640px]:gap-2 max-[1024px]:grid-cols-2 max-[1024px]:gap-4">
+        <div class="py-5 px-8 bg-klr_section flex flex-col items-center text-center">
+          <div><img class="w-[66px] my-7" src="images/coding.jpg" /></div>
+          <p class="text-klr_heading mb-4 font-medium text-lg leading-6">Web Development</p>
+          <p class="text-klr_para text-base text-center">Blog, E-Commerce</p>
+        </div>
+
+        <div class="py-5 px-8 bg-klr_section flex flex-col items-center text-center">
+          <div><img class="w-[66px] my-7" src="images/group.jpg" /></div>
+          <p class="text-klr_heading mb-4 font-medium text-lg leading-6">UI/UX Design</p>
+          <p class="text-klr_para text-base text-center">Mobile App, Website Design</p>
+        </div>
+
+        <div class="py-5 px-8 bg-klr_section flex flex-col items-center text-center">
+          <div><img class="w-[66px] my-7" src="images/microphone.jpg" /></div>
+          <p class="text-klr_heading mb-4 font-medium text-lg leading-6">Sound Design</p>
+          <p class="text-klr_para text-base text-center">Voice Over, Beat Making</p>
+        </div>
+
+        <div class="py-5 px-8 bg-klr_section flex flex-col items-center text-center">
+          <div><img class="w-[66px] my-7" src="images/game-development.jpg" /></div>
+          <p class="text-klr_heading mb-4 font-medium text-lg leading-6">Game Design</p>
+          <p class="text-klr_para text-base text-center">Character Design, Props & Objects</p>
+        </div>
+
+        <div class="py-5 px-8 bg-klr_section flex flex-col items-center text-center">
+          <div><img class="w-[66px] my-7" src="images/photography.jpg" /></div>
+          <p class="text-klr_heading mb-4 font-medium text-lg leading-6">Photography</p>
+          <p class="text-klr_para text-base text-center">Portrait, Product Photography</p>
+        </div>
+
+        <div class="py-5 px-8 bg-klr_section flex flex-col items-center text-center pt-8">
+          <p class="text-klr_heading mb-4 font-medium text-lg leading-6">Advertising</p>
+          <p class="text-klr_para text-base text-center">Lorem ipsum Dolor Sit Amet, COnsectetur Adipiscing Elit. Vitae
+            Nulla Diam In Ac Dictum A Urna Viverra Morbi.</p>
+          <p class="order-item mt-7 text-klr_yellow font-['Roboto'] font-bold text-xs text-center hover:underline">ORDER
+            NOW ></p>
+        </div>
+      </div>
     </section>
-    <section
-      id=""
-      class="fixed top-0 right-0 min-h-screen bg-gray-600 w-[100px]"
-    >
-      <!-- right sidebar -->
+    <!-- Price Plans Section Section -->
+    <section class="price-plan-section">
+      <h3 class="font-bold text-[32px] leading-10 text-klr_heading text-center mb-6">Plans</h3>
+
+      <p class="m-auto mb-12 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit tick_no.jpgn Deserunt
+        Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="grid grid-cols-3 gap-5 max-[768px]:grid-cols-1 max-[768px]:4">
+        <div class="flex flex-col justify-between gap-3 bg-klr_section pt-[52px] pr-1 pb-6 pl-8">
+          <h4 class="font-[600] text-2xl leading-8 text-klr_heading m-auto">Silver</h4>
+          <p class="font-bold text-[32px] leading-10 m-auto text-klr_heading">$0.00 <span
+              class="per-hour text-base text-klr_heading">/Hour</span></p>
+          <p class="text-base text-center text-klr_para">For Most Businesses That Want To Optimize Web Queries</p>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">UI Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Web Development</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">Logo Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">SEO Optimization</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">WordPress Integration</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">5 Websites</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">Unlimited User</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">20 GB Bandwidth</p>
+          </div>
+
+          <button
+            class="font-bold text-sm leading-4 text-klr_heading py-2.5 px-10 bg-klr_section rounded-full m-auto shadow-[0_1px_5px] shadow-black">ORDER
+            NOW</button>
+        </div>
+
+        <div class="flex flex-col justify-between gap-3 bg-klr_section pt-[52px] pr-1 pb-6 pl-8 relative">
+          <p class="bg-[#ffb400] text-center py-1 font-bold text-base text-klr_heading absolute top-0 left-0 right-0">
+            Most Popular</p>
+          <h4 class="font-[600] text-2xl leading-8 text-klr_heading m-auto">Gold</h4>
+          <p class="font-bold text-[32px] leading-10 m-auto text-klr_heading">$50.00 <span
+              class="per-hour text-base text-klr_heading">/Hour</span></p>
+          <p class="text-base text-center text-klr_para">For Most Businesses That Want To Optimize Web Queries</p>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">UI Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Web Development</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Logo Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">SEO Optimization</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">WordPress Integration</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">5 Websites</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">Unlimited User</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">20 GB Bandwidth</p>
+          </div>
+
+          <button
+            class="font-bold text-sm leading-4 text-klr_heading py-2.5 px-10 bg-[#ffb400] rounded-full m-auto">ORDER
+            NOW</button>
+        </div>
+
+        <div class="flex flex-col justify-between gap-3 bg-klr_section pt-[52px] pr-1 pb-6 pl-8">
+          <h4 class="font-[600] text-2xl leading-8 text-klr_heading m-auto">Diamond</h4>
+          <p class="font-bold text-[32px] leading-10 m-auto text-klr_heading">$80.00 <span
+              class="per-hour text-base text-klr_heading">/Hour</span></p>
+          <p class="text-base text-center text-klr_para">For Most Businesses That Want To Optimize Web Queries</p>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">UI Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Web Development</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Logo Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">SEO Optimization</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">WordPress Integration</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">5 Websites</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Unlimited User</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">20 GB Bandwidth</p>
+          </div>
+
+          <button
+            class="font-bold text-sm leading-4 text-klr_heading py-2.5 px-10 bg-klr_section rounded-full m-auto shadow-[0_1px_5px] shadow-black">ORDER
+            NOW</button>
+        </div>
+      </div>
     </section>
-  </body>
+
+
+    <!-- Recommendation Section -->
+    <section class="recommendations-section">
+      <h3 class="font-bold text-[32px] leading-10 text-klr_heading text-center mb-6">Recommendations</h3>
+
+      <p class="m-auto mb-5 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit Non Deserunt Ullamco
+        Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="grid grid-cols-3 gap-4 max-[768px]:grid-cols-1">
+        <div class="bg-[#ffffff] flex flex-col justify-start items-left pl-6 pb-4">
+          <div class="flex gap-3 mt-6 mb-4">
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+          </div>
+          <h4 class="mb-4 font-medium text-lg leading-6 text-klr_heading">Great Quality!</h4>
+          <p class="mr-6 mb-8 text-base text-klr_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+            nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+          <div class="flex flex-row gap-3">
+            <img class="w-[80px] h-[80px]" src="images/profile_james.jpg" />
+            <div class="flex flex-col gap-1 justify-center">
+              <p class="font-medium text-lg leading-6 text-klr_heading">James Gouse</p>
+              <p class="text-base text-klr_para">Graphic Designer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#ffffff] flex flex-col justify-start items-left pl-6 pb-4">
+          <div class="flex gap-3 mt-6 mb-4">
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+          </div>
+          <h4 class="mb-4 font-medium text-lg leading-6 text-klr_heading">Great Quality!</h4>
+          <p class="mr-6 mb-8 text-base text-klr_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+            nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+          <div class="flex flex-row gap-3">
+            <img class="w-[80px] h-[80px]" src="images/profile_tiana.jpg" />
+            <div class="flex flex-col gap-1 justify-center">
+              <p class="font-medium text-lg leading-6 text-klr_heading">Tiana Philips</p>
+              <p class="text-base text-klr_para">Photographer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#ffffff] flex flex-col justify-start items-left pl-6 pb-4">
+          <div class="flex gap-3 mt-6 mb-4">
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+          </div>
+          <h4 class="mb-4 font-medium text-lg leading-6 text-klr_heading">Amazing Work!</h4>
+          <p class="mr-6 mb-8 text-base text-klr_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+            nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+          <div class="flex flex-row gap-3">
+            <img class="w-[80px] h-[80px]" src="images/profile_talan.jpg" />
+            <div class="flex flex-col gap-1 justify-center">
+              <p class="font-medium text-lg leading-6 text-klr_heading">Talan Westervelt</p>
+              <p class="text-base text-klr_para">Business Man</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Education -->
+    <section class="education-section">
+      <h2 class="font-bold text-3xl leading-10 text-klr_heading text-center mb-6">Education</h2>
+
+      <p class="m-0 m-auto mb-12 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit Non Deserunt
+        Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="bg-klr_section py-5 px-10">
+        <div
+          class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 max-[768px]:flex max-[768px]:flex-col max-[768px]:gap-5 max-[768px]:pt-7 max-[768px]:pb-4">
+          <div class="flex flex-col basis-2/5 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">University of Toronto</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-medium text-lg lead-6 text-klr_heading">Certificate of Web Training</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id
+              amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et
+              pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 max-[768px]:flex max-[768px]:flex-col max-[768px]:gap-5 max-[768px]:pt-7 max-[768px]:pb-4 border-y-[2px] border-y-solid border-y-klr_border">
+          <div class="flex flex-col basis-2/5 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">Programming Course</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-medium text-lg lead-6 text-klr_heading">Certificate of Web Training</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id
+              amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et
+              pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 max-[768px]:flex max-[768px]:flex-col max-[768px]:gap-5 max-[768px]:pt-7 max-[768px]:pb-4">
+          <div class="flex flex-col basis-2/5 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">Web Developer Course</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-medium text-lg lead-6 text-klr_heading">Certificate of Web Training</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id
+              amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et
+              pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Work History -->
+    <section class="work-section">
+      <h3 class="font-bold text-3xl leading-10 text-klr_heading text-center mb-6">Work History</h3>
+
+      <p class="m-0 m-auto mb-12 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit Non Deserunt
+        Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="bg-[#ffffff] py-5 px-10">
+        <div class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 max-[768px]:flex-col">
+          <div class="flex flex-col basis-2/3 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">Lead Web Designer</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-medium text-lg lead-6 text-klr_heading">Certificate of Web Training</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id
+              amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et
+              pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 box2 border-y-[1.5px] border-y-solid border-y-[#f0f0f6] max-[768px]:flex-col">
+          <div class="flex flex-col basis-2/3 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">Junior Web Designer</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-medium text-lg lead-6 text-klr_heading">Senior Web Designer</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id
+              amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et
+              pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 max-[768px]:flex-col">
+          <div class="flex flex-col basis-2/3 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">Web Developer Course</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-mediumtext-lg lead-6 text-klr_heading">Certificate of Web Training</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id
+              amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et
+              pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+      <h3 class="font-bold text-[32px] leading-10 text-klr_heading text-center mb-6">Portfolio</h3>
+
+      <p class="m-auto mb-5 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit Non Deserunt Ullamco
+        Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div
+        class="nav-box flex flex-row justify-center mb-12 gap-5 max-[640px]:flex max-[640px]:flex-col max-[640px]:justify-center max-[640px]:gap-3 max-[640px]:mb-5 max-[640px]:items-center font-medium text-lg leading-6 text-klr_heading">
+        <button class="hover:text-klr_yellow">All Categories</button>
+        <button class="hover:text-klr_yellow">UI Design</button>
+        <button class="hover:text-klr_yellow">Web Templates</button>
+        <button class="hover:text-klr_yellow">Logo</button>
+        <button class="hover:text-klr_yellow">Branding</button>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 justify-center align-center max-[640px]:grid-cols-1 max-[1024px]:grid-cols-2">
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image1.jpg" /></div>
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image2.jpg" /></div>
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image3.jpg" /></div>
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image4.jpg" /></div>
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image5.jpg" /></div>
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image6.jpg" /></div>
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image7.jpg" /></div>
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image8.jpg" /></div>
+        <div class="w-full"><img class="block m-0 m-auto w-full h-auto" src="images/port_Image9.jpg" /></div>
+      </div>
+    </section>
+
+
+    <!-- Blog  -->
+    <section class="blog-section">
+      <h2 class="font-bold text-3xl leading-[40px] text-klr_heading text-center mb-6">Blog</h2>
+
+      <p class="mt-0 mb-5 m-auto text-base text-center text-klr_para">Amet Minim Mollit Non Deserunt Ullamco Est Sit
+        Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="grid grid-cols-3 gap-3 justify-center content-center max-[640px]:grid-cols-1">
+        <div class="bg-klr_section">
+          <div>
+            <img class="block m-0 m-auto w-full h-auto" src="images/blog_1.jpg" />
+          </div>
+          <div class="p-2.5">
+            <h3 class="font-medium text-lg leading-6 text-klr_heading mt-6 mb-2">How To Make Web Templates</h3>
+            <p class="text-base text-klr_para mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla
+              diam in ac dictum a urna</p>
+            <p class="font-medium text-lg leading-6 text-klr_yellow hover:underline">Learn more ></p>
+          </div>
+        </div>
+
+        <div class="bg-klr_section">
+          <div>
+            <img class="block m-0 m-auto w-full h-auto" src="images/blog_2.jpg" />
+          </div>
+          <div class="p-2.5">
+            <h3 class="font-medium text-lg leading-6 text-klr_heading mt-6 mb-2">Make Business Card</h3>
+            <p class="text-base text-klr_para mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla
+              diam in ac dictum a urna</p>
+            <p class="font-medium text-lg leading-6 text-klr_yellow hover:underline">Learn more ></p>
+          </div>
+        </div>
+
+        <div class="bg-klr_section">
+          <div>
+            <img class="block m-0 m-auto w-full h-auto" src="images/blog_3.jpg" />
+          </div>
+          <div class="p-2.5">
+            <h3 class="font-medium text-lg leading-6 text-klr_heading mt-6 mb-2">How To Make Flyer Design</h3>
+            <p class="text-base text-klr_para mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla
+              diam in ac dictum a urna</p>
+            <p class="font-medium text-lg leading-6 text-klr_yellow hover:underline">Learn more ></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------->
+    <!-- Registration Form & Contact Layout -->
+    <!---------------------------------------->
+
+    <section class="flex flex-row gap-4">
+
+      <!-- Registration Form -->
+      <section class="registration-form-section basis-3/5">
+        <h3 class="font-bold text-3xl leading-10 text-klr_heading text-left mb-6">Leave Us Your Info</h3>
+
+        <div class="bg-white w-full p-6 font-['Inter']">
+          <form action="#">
+            <label class="block mb-2 text-lg rounded-6" for="f-name">Your Full Name (Required)</label>
+            <input class="w-full h-[50px] mb-6 bg-klr_border rounded-none" type="text" id="f-name" />
+
+            <label class="block mb-2 text-lg rounded-6" for="f-email">Your Email (Required)</label>
+            <input class="w-full h-[50px] mb-6 bg-klr_border rounded-none" type="email" id="f-email" />
+
+            <label class="block mb-2 text-lg rounded-6" for="f-subject">Subject</label>
+            <input class="w-full h-[50px] mb-6 bg-klr_border rounded-none" type="text" id="f-subject" />
+
+            <label class="block mb-2 text-lg rounded-6" for="f-message">Your Message</label>
+            <input class="w-full h-[200px] mb-6 bg-klr_border rounded-none" type="textarea" id="f-message" />
+
+            <button class="h-9 bg-klr_yellow py-2 px-6 text-klr_heading text-sm leading-4 font-[600] rounded-none"
+              type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact-section font-['Inter'] text-base text-klr_para basis-2/5">
+        <div class="font-['Inter']">
+          <h2 class="font-bold text-3xl leading-10 text-klr_heading text-left mb-6">Information</h2>
+
+          <div class="flex flex-col gap-5">
+            <div class="bg-klr_section">
+              <div class="mt-6 w-10 h-10 flex justify-center items-center m-auto bg-klr_yellow rounded-full">
+                <img class="w-[15px] h-[15px]" src="images/contact_1.jpg" />
+              </div>
+
+              <div class="flex flex-col gap-4 p-6">
+                <div class="flex flex-row justify-between">
+                  <p>Country:</p>
+                  <p>Bangladesh</p>
+                </div>
+
+                <div class="flex flex-row justify-between">
+                  <p>City:</p>
+                  <p>Dhaka</p>
+                </div>
+
+                <div class="flex flex-row justify-between">
+                  <p>Street:</p>
+                  <p>35 Vhatara, Badda</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-klr_section">
+              <div class="mt-6 w-10 h-10 flex justify-center items-center m-auto bg-klr_yellow rounded-full">
+                <img class="w-[15px] h-[15px]" src="images/contact_2.jpg" />
+              </div>
+
+              <div class="flex flex-col gap-4 p-6">
+                <div class="flex flex-row justify-between">
+                  <p>Email:</p>
+                  <p>youremail@gmail.com</p>
+                </div>
+
+                <div class="flex flex-row justify-between">
+                  <p>Skype:</p>
+                  <p>@YourUserName</p>
+                </div>
+
+                <div class="flex flex-row justify-between">
+                  <p>Telegram:</p>
+                  <p>@YourUserName</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-klr_section">
+              <div class="mt-6 w-10 h-10 flex justify-center items-center m-auto bg-klr_yellow rounded-full">
+                <img class="w-[15px] h-[15px]" src="images/contact_3.jpg" />
+              </div>
+
+              <div class="flex flex-col gap-4 p-6">
+                <div class="flex flex-row justify-between">
+                  <p>Support Services:</p>
+                  <p>15369</p>
+                </div>
+
+                <div class="flex flex-row justify-between">
+                  <p>Office:</p>
+                  <p>+58 (021)356 587 235</p>
+                </div>
+
+                <div class="flex flex-row justify-between">
+                  <p>Personal:</p>
+                  <p>+58 (021)356 587 235</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+  <section id="" class="right-bar-section bg-klr_section fixed top-0 right-0 min-h-screen w-[80px] py-[10px]">
+    <!-- right sidebar -->
+    <div class="icon-column flex flex-col justify-center items-center gap-10">
+      <div><img class="w-10 h-10" src="images/right_home.jpg" /></div>
+      <div><img class="w-10 h-10" src="images/right_service.jpg" /></div>
+      <div><img class="w-10 h-10" src="images/right_cv.jpg" /></div>
+      <div><img class="w-10 h-10" src="images/right_portfolio.jpg" /></div>
+      <div><img class="w-10 h-10" src="images/right_blog.jpg" /></div>
+      <div><img class="w-10 h-10" src="images/right_contact.jpg" /></div>
+    </div>
+  </section>
+</body>
+
 </html>
