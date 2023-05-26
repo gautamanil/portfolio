@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-2,345;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              klr_page: "#e5e5e5",
+              klr_section: "#ffffff",
+              klr_heading: "#2b2b2b",
+              klr_para: "#767676",
+              klr_border: "#f0f0f6",
+              klr_yellow: "#ffb400",
+              klr_special: "#7eb942",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-klr_page font-['Inter']">
+    <section class="blog-section">
+      <h2 class="font-bold text-3xl leading-[40px] text-klr_heading text-center mb-6">Blog</h2>
+
+      <p class="mt-0 mb-5 m-auto text-base text-center text-klr_para">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="grid grid-cols-3 gap-3 justify-center content-center max-[640px]:grid-cols-1">
+        <div class="bg-klr_section">
+          <div>
+            <img class="block m-0 m-auto w-full h-auto" src="images/blog_1.jpg" />
+          </div>
+          <div class="p-2.5">
+            <h3 class="font-medium text-lg leading-6 text-klr_heading mt-6 mb-2">How To Make Web Templates</h3>
+            <p class="text-base text-klr_para mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna</p>
+            <p class="font-medium text-lg leading-6 text-klr_yellow hover:underline">Learn more ></p>
+          </div>
+        </div>
+
+        <div class="bg-klr_section">
+          <div>
+            <img class="block m-0 m-auto w-full h-auto" src="images/blog_2.jpg" />
+          </div>
+          <div class="p-2.5">
+            <h3 class="font-medium text-lg leading-6 text-klr_heading mt-6 mb-2">Make Business Card</h3>
+            <p class="text-base text-klr_para mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna</p>
+            <p class="font-medium text-lg leading-6 text-klr_yellow hover:underline">Learn more ></p>
+          </div>
+        </div>
+
+        <div class="bg-klr_section">
+          <div>
+            <img class="block m-0 m-auto w-full h-auto" src="images/blog_3.jpg" />
+          </div>
+          <div class="p-2.5">
+            <h3 class="font-medium text-lg leading-6 text-klr_heading mt-6 mb-2">How To Make Flyer Design</h3>
+            <p class="text-base text-klr_para mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna</p>
+            <p class="font-medium text-lg leading-6 text-klr_yellow hover:underline">Learn more ></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

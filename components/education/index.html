@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-2,345;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              klr_page: "#e5e5e5",
+              klr_section: "#ffffff",
+              klr_heading: "#2b2b2b",
+              klr_para: "#767676",
+              klr_border: "#f0f0f6",
+              klr_yellow: "#ffb400",
+              klr_special: "#7eb942",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-klr_page font-['Inter']">
+    <section class="education-section">
+      <h2 class="font-bold text-3xl leading-10 text-klr_heading text-center mb-6">Education</h2>
+
+      <p class="m-0 m-auto mb-12 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="bg-klr_section py-5 px-10">
+        <div class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 max-[768px]:flex max-[768px]:flex-col max-[768px]:gap-5 max-[768px]:pt-7 max-[768px]:pb-4">
+          <div class="flex flex-col basis-2/5 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">University of Toronto</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-medium text-lg lead-6 text-klr_heading">Certificate of Web Training</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 max-[768px]:flex max-[768px]:flex-col max-[768px]:gap-5 max-[768px]:pt-7 max-[768px]:pb-4 border-y-[2px] border-y-solid border-y-klr_border">
+          <div class="flex flex-col basis-2/5 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">Programming Course</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-medium text-lg lead-6 text-klr_heading">Certificate of Web Training</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-5 pt-7 pb-4 px-0 gap-5 max-[768px]:flex max-[768px]:flex-col max-[768px]:gap-5 max-[768px]:pt-7 max-[768px]:pb-4">
+          <div class="flex flex-col basis-2/5 gap-6">
+            <h4 class="font-medium text-lg leading-7 text-klr_heading">Web Developer Course</h4>
+
+            <div class="flex flex-row items-center gap-5">
+              <p class="text-base text-klr_heading">Student</p>
+              <p class="text-xs leading-3 bg-klr_yellow rounded-sm py-[3px] px-2">Jan 2016 - Dec 2021</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col basis-3/5 gap-6">
+            <h4 class="font-medium text-lg lead-6 text-klr_heading">Certificate of Web Training</h4>
+            <p class="text-base text-klr_para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque.
+              Molestie risus enim neque eget dui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
