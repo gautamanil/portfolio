@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-2,345;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              klr_page: "#e5e5e5",
+              klr_section: "#ffffff",
+              klr_heading: "#2b2b2b",
+              klr_para: "#767676",
+              klr_border: "#f0f0f6",
+              klr_yellow: "#ffb400",
+              klr_special: "#7eb942",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body class="bg-klr_page font-['Inter']">
+    <section class="recommendations-section">
+      <h3 class="font-bold text-[32px] leading-10 text-klr_heading text-center mb-6">Recommendations</h3>
+
+      <p class="m-auto mb-5 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="grid grid-cols-3 gap-4 max-[768px]:grid-cols-1">
+        <div class="bg-[#ffffff] flex flex-col justify-start items-left pl-6 pb-4">
+          <div class="flex gap-3 mt-6 mb-4">
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+          </div>
+          <h4 class="mb-4 font-medium text-lg leading-6 text-klr_heading">Great Quality!</h4>
+          <p class="mr-6 mb-8 text-base text-klr_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+          <div class="flex flex-row gap-3">
+            <img class="w-[80px] h-[80px]" src="images/profile_james.jpg" />
+            <div class="flex flex-col gap-1 justify-center">
+              <p class="font-medium text-lg leading-6 text-klr_heading">James Gouse</p>
+              <p class="text-base text-klr_para">Graphic Designer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#ffffff] flex flex-col justify-start items-left pl-6 pb-4">
+          <div class="flex gap-3 mt-6 mb-4">
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+          </div>
+          <h4 class="mb-4 font-medium text-lg leading-6 text-klr_heading">Great Quality!</h4>
+          <p class="mr-6 mb-8 text-base text-klr_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+          <div class="flex flex-row gap-3">
+            <img class="w-[80px] h-[80px]" src="images/profile_tiana.jpg" />
+            <div class="flex flex-col gap-1 justify-center">
+              <p class="font-medium text-lg leading-6 text-klr_heading">Tiana Philips</p>
+              <p class="text-base text-klr_para">Photographer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#ffffff] flex flex-col justify-start items-left pl-6 pb-4">
+          <div class="flex gap-3 mt-6 mb-4">
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+            <div><img class="w-4.5 h-4.5" src="images/star.jpg" /></div>
+          </div>
+          <h4 class="mb-4 font-medium text-lg leading-6 text-klr_heading">Amazing Work!</h4>
+          <p class="mr-6 mb-8 text-base text-klr_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+          <div class="flex flex-row gap-3">
+            <img class="w-[80px] h-[80px]" src="images/profile_talan.jpg" />
+            <div class="flex flex-col gap-1 justify-center">
+              <p class="font-medium text-lg leading-6 text-klr_heading">Talan Westervelt</p>
+              <p class="text-base text-klr_para">Business Man</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
