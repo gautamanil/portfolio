@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-2,345;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              klr_page: "#e5e5e5",
+              klr_section: "#ffffff",
+              klr_heading: "#2b2b2b",
+              klr_para: "#767676",
+              klr_border: "#f0f0f6",
+              klr_yellow: "#ffb400",
+              klr_special: "#7eb942",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body class="bg-klr_page font-['Inter']">
+    <section class="price-plan-section">
+      <h3 class="font-bold text-[32px] leading-10 text-klr_heading text-center mb-6">Plans</h3>
+
+      <p class="m-auto mb-12 text-base text-center text-klr_para max-w-[440px]">Amet Minim Mollit tick_no.jpgn Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+      <div class="grid grid-cols-3 gap-5 max-[768px]:grid-cols-1 max-[768px]:4">
+        <div class="flex flex-col justify-between gap-3 bg-klr_section pt-[52px] pr-1 pb-6 pl-8">
+          <h4 class="font-[600] text-2xl leading-8 text-klr_heading m-auto">Silver</h4>
+          <p class="font-bold text-[32px] leading-10 m-auto text-klr_heading">$0.00 <span class="per-hour text-base text-klr_heading">/Hour</span></p>
+          <p class="text-base text-center text-klr_para">For Most Businesses That Want To Optimize Web Queries</p>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">UI Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Web Development</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">Logo Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">SEO Optimization</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">WordPress Integration</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">5 Websites</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">Unlimited User</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">20 GB Bandwidth</p>
+          </div>
+
+          <button class="font-bold text-sm leading-4 text-klr_heading py-2.5 px-10 bg-klr_section rounded-full m-auto shadow-[0_1px_5px] shadow-black">ORDER NOW</button>
+        </div>
+
+        <div class="flex flex-col justify-between gap-3 bg-klr_section pt-[52px] pr-1 pb-6 pl-8 relative">
+          <p class="bg-[#ffb400] text-center py-1 font-bold text-base text-klr_heading absolute top-0 left-0 right-0">Most Popular</p>
+          <h4 class="font-[600] text-2xl leading-8 text-klr_heading m-auto">Gold</h4>
+          <p class="font-bold text-[32px] leading-10 m-auto text-klr_heading">$50.00 <span class="per-hour text-base text-klr_heading">/Hour</span></p>
+          <p class="text-base text-center text-klr_para">For Most Businesses That Want To Optimize Web Queries</p>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">UI Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Web Development</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Logo Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">SEO Optimization</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">WordPress Integration</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">5 Websites</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">Unlimited User</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_no.jpg" />
+            <p class="text-base text-klr_para">20 GB Bandwidth</p>
+          </div>
+
+          <button class="font-bold text-sm leading-4 text-klr_heading py-2.5 px-10 bg-[#ffb400] rounded-full m-auto">ORDER NOW</button>
+        </div>
+
+        <div class="flex flex-col justify-between gap-3 bg-klr_section pt-[52px] pr-1 pb-6 pl-8">
+          <h4 class="font-[600] text-2xl leading-8 text-klr_heading m-auto">Diamond</h4>
+          <p class="font-bold text-[32px] leading-10 m-auto text-klr_heading">$80.00 <span class="per-hour text-base text-klr_heading">/Hour</span></p>
+          <p class="text-base text-center text-klr_para">For Most Businesses That Want To Optimize Web Queries</p>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">UI Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Web Development</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Logo Design</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">SEO Optimization</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">WordPress Integration</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">5 Websites</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">Unlimited User</p>
+          </div>
+
+          <div class="flex flex-row gap-4">
+            <img class="w-6 h-6 bg-klr_section" src="images/tick_yes.jpg" />
+            <p class="text-base text-klr_para">20 GB Bandwidth</p>
+          </div>
+
+          <button class="font-bold text-sm leading-4 text-klr_heading py-2.5 px-10 bg-klr_section rounded-full m-auto shadow-[0_1px_5px] shadow-black">ORDER NOW</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
