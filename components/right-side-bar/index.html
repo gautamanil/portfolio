@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-2,345;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              klr_page: "#e5e5e5",
+              klr_section: "#ffffff",
+              klr_heading: "#2b2b2b",
+              klr_para: "#767676",
+              klr_border: "#f0f0f6",
+              klr_yellow: "#ffb400",
+              klr_special: "#7eb942",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body section="bg-klr_page">
+    <section class="right-bar-section bg-klr_section">
+      <div class="icon-column flex flex-col justify-center items-center gap-10">
+        <div><img class="w-10 h-10" src="images/right_home.jpg" /></div>
+        <div><img class="w-10 h-10" src="images/right_service.jpg" /></div>
+        <div><img class="w-10 h-10" src="images/right_cv.jpg" /></div>
+        <div><img class="w-10 h-10" src="images/right_portfolio.jpg" /></div>
+        <div><img class="w-10 h-10" src="images/right_blog.jpg" /></div>
+        <div><img class="w-10 h-10" src="images/right_contact.jpg" /></div>
+      </div>
+    </section>
+  </body>
+</html>
