@@ -1,0 +1,12 @@
+person1 = {
+  fullName: "Anil Gautam",
+  title: "Full-Stack Developer",
+  social: ["facebook", "instagram", "twitter", "linkedin", "youtube", "dribble"],
+  age: 25,
+  residence: "BD",
+  freelance: true,
+  address: "Kathmandu, Nepal",
+  languages: { Nepali: 100, English: 90, Hindi: 60 },
+  skills: { HTML: 90, CSS: 85, JavaScript: 80, React: 75, Express: 85 },
+  extraSkills: ["Tailwind", "SASS", "Python", "Flask", "GIT Knowledge"],
+};
