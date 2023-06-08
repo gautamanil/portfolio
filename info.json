@@ -1,0 +1,28 @@
+{
+  "fullName": "Anil Gautam",
+  "title": "Full-Stack Developer",
+  "social": [
+    { "name": "facebook", "imageLink": "/images/facebook.jpg" },
+    { "name": "instagram", "imageLink": "/images/instagram.jpg" },
+    { "name": "twitter", "imageLink": "/images/twitter.jpg" },
+    { "name": "linkedin", "imageLink": "/images/linkedin.jpg" },
+    { "name": "youtube", "imageLink": "/images/youtube.jpg" },
+    { "name": "dribble", "imageLink": "/images/dribble.jpg" }
+  ],
+  "age": 30,
+  "residence": "NP",
+  "freelance": true,
+  "address": "Kathmandu, Nepal",
+  "languages": [
+    { "name": "Arabic", "skill": 50 },
+    { "name": "English", "skill": 10 },
+    { "name": "Hindi", "skill": 20 }
+  ],
+  "skills": [
+    { "name": "Python", "skill": 95 },
+    { "name": "Matlab", "skill": 20 },
+    { "name": "C", "skill": 50 },
+    { "name": "PSAT", "skill": 90 }
+  ],
+  "extraSkills": ["SCSS", "Python", "Flask", "Django"]
+}
